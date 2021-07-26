@@ -1,0 +1,18 @@
+server:
+  port: 8000
+#  servlet:
+#    context-path: /eureka
+
+eureka:
+  server:
+    enable-self-preservation: false         #注册中心开启自我保护
+    eviction-interval-timer-in-ms: 3000     #检查服务失效时间(毫秒)
+
+  instance:
+    lease-expiration-duration-in-seconds: 90  #注册中心检查服务心跳间隔
+    hostname: localhost
+  client:
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka
+    fetch-registry: false
+    register-with-eureka: false     #自身注册到注册中心

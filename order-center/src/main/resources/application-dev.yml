@@ -1,0 +1,15 @@
+server:
+  port: 8100
+
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8000/eureka/
+  htggoggfg    instance:
+    prefer-ip-address: true
+    instance-id: order-center
+spring:
+  application:
+    name: order

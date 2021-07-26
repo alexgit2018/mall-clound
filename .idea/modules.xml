@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/mall-gateway/mall-gateway.iml" filepath="$PROJECT_DIR$/mall-gateway/mall-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mall-register/mall-register.iml" filepath="$PROJECT_DIR$/mall-register/mall-register.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mall-gateway/mallgateway.iml" filepath="$PROJECT_DIR$/mall-gateway/mallgateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mallregistercenter/mallregistercenter.iml" filepath="$PROJECT_DIR$/mallregistercenter/mallregistercenter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/order-center/order-center.iml" filepath="$PROJECT_DIR$/order-center/order-center.iml" />
+    </modules>
+  </component>
+</project>
