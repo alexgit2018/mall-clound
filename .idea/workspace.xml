@@ -1,11 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="17374d5c-757f-441a-8049-0c26fc1772e9" name="Default Changelist" comment="" />
+    <list default="true" id="17374d5c-757f-441a-8049-0c26fc1772e9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jsqlparser_jsqlparser_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_5_1_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_spring_boot_autoconfigure_1_2_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_spring_boot_starter_1_2_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_4_0_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_autoconfigure_1_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_starter_1_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_3_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_3_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-center/src/main/java/com/mall/ordercenter/annotion/LoginUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-center/src/main/java/com/mall/ordercenter/annotion/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-center/src/main/java/com/mall/ordercenter/annotion/OrderValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-center/src/main/java/com/mall/ordercenter/annotion/Sort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-center/src/main/java/com/mall/ordercenter/annotion/SortValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-center/src/main/java/com/mall/ordercenter/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-center/src/main/java/com/mall/ordercenter/model/OrderGoodsModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-center/src/main/java/com/mall/ordercenter/model/OrderListModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-center/src/main/java/com/mall/ordercenter/model/OrderOP.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-center/src/main/java/com/mall/ordercenter/service/OrderGoodsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-center/src/main/java/com/mall/ordercenter/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-center/src/main/java/com/mall/ordercenter/utils/OrderEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-center/src/main/java/com/mall/ordercenter/utils/ResponseUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-center/src/main/java/com/mall/ordercenter/utils/ReturnEnumCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-center/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order-center/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -22,6 +54,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1uXEvdhRH68fbvIilrWLDWwytO3" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -34,10 +67,11 @@
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/order-center/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/order-center/src/main/java/com/mall/ordercenter/annotion" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -46,14 +80,22 @@
     <property name="settings.editor.selected.configurable" value="http.proxy" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/order-center/src/main/java/com/mall/ordercenter/annotion" />
+      <recent name="$PROJECT_DIR$/order-center/src/main/java/com/mall/ordercenter/utils" />
+      <recent name="$PROJECT_DIR$/order-center/src/main/java/com/mall/ordercenter/enum" />
+      <recent name="$PROJECT_DIR$/order-center/src/main/java/com/mall/ordercenter/service" />
+      <recent name="$PROJECT_DIR$/order-center/src/main/resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.mall.ordercenter.utils" />
+      <recent name="com.mall.ordercenter.annotion" />
+      <recent name="com.mall.ordercenter.model" />
+      <recent name="com.mall.ordercenter.controller" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/order-center/src/main/resources" />
       <recent name="$PROJECT_DIR$/order-center/src/main" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/order-center/src/main/resources" />
-      <recent name="$PROJECT_DIR$/order-center/src/main/java/com/mall/ordercenter" />
-      <recent name="$PROJECT_DIR$/mall-register/src/main/resources" />
     </key>
   </component>
   <component name="RunManager" selected="Maven.maven">
@@ -133,6 +175,7 @@
       <workItem from="1626871243419" duration="4789000" />
       <workItem from="1626954650846" duration="8422000" />
       <workItem from="1627299737590" duration="2333000" />
+      <workItem from="1627390902697" duration="3254000" />
     </task>
     <servers />
   </component>
