@@ -3,11 +3,11 @@ server:
 
 spring:
   application:
-    name: gateway
+    name: mallgateway
   cloud:
     gateway:
       routes:
-        - id: gatewayroute
+#        - id: gatewayroute
           url: http://localhost:9001
           predicates:
             - Path =/gate/**,/rule/**
@@ -16,6 +16,9 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:800/eurka
+      defaultZone: http://localhost:8000/eureka
+    fetch-registry: true
+    register-with-eureka: true
   instance:
     prefer-ip-address: true
+    instance-id: mallgateway

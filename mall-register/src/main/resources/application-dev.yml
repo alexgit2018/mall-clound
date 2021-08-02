@@ -2,7 +2,6 @@ server:
   port: 8000
 #  servlet:
 #    context-path: /eureka
-
 eureka:
   server:
     enable-self-preservation: false         #注册中心开启自我保护
@@ -16,3 +15,6 @@ eureka:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka
     fetch-registry: false
     register-with-eureka: false     #自身注册到注册中心
+logging:
+  level:
+    com.netflix: warn

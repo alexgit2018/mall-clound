@@ -7,9 +7,9 @@ eureka:
     register-with-eureka: true
     service-url:
       defaultZone: http://localhost:8000/eureka/
-  htggoggfg    instance:
+  instance:
     prefer-ip-address: true
-    instance-id: order-center
+    instance-id: mall-order-center
 spring:
   application:
-    name: order
+    name: mallorder
