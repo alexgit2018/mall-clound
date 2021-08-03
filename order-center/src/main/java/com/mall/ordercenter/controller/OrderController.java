@@ -1,4 +1,4 @@
-﻿package com.mall.ordercenter.controller;
+package com.mall.ordercenter.controller;
 
 import com.mall.ordercenter.annotion.LoginUser;
 import com.mall.ordercenter.annotion.Order;

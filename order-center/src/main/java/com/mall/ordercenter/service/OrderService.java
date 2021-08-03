@@ -6,9 +6,8 @@ import com.github.pagehelper.PageInfo;
 import com.mall.ordercenter.dao.ChardancemallOrderMapper;
 import com.mall.ordercenter.domain.ChardancemallOrder;
 import com.mall.ordercenter.domain.ChardancemallOrderExample;
+import org.apache.commons.lang.StringUtils;
 import org.springframework.stereotype.Service;
-import org.springframework.util.StringUtils;
-
 import javax.annotation.Resource;
 import java.time.LocalDateTime;
 import java.util.List;
@@ -120,7 +119,7 @@ public class OrderService {
             criteria.andOrderStatusIn(statusArr);
         }
 
-        if(!StringUtils.isEmpty(start) && !StringUtils.isEmpty(end)){
+        if(!StringUtils.isEmpty(start.toString()) && !StringUtils.isEmpty(end.toString())){
             criteria.andAddTimeBetween(start,end);
         }
         criteria.andDeletedEqualTo(false);

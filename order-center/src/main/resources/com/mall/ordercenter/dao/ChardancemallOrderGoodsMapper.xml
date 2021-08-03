@@ -14,7 +14,7 @@
     <result column="product_id" jdbcType="INTEGER" property="productId" />
     <result column="number" jdbcType="SMALLINT" property="number" />
     <result column="price" jdbcType="DECIMAL" property="price" />
-    <result column="specifications" jdbcType="VARCHAR" property="specifications" typeHandler="com.db.mybatis.JsonStringArrayTypeHandler" />
+    <result column="specifications" jdbcType="VARCHAR" property="specifications" typeHandler="com.mall.ordercenter.batisalia.JsonStringArrayTypeHandler" />
     <result column="pic_url" jdbcType="VARCHAR" property="picUrl" />
     <result column="comment" jdbcType="INTEGER" property="comment" />
     <result column="add_time" jdbcType="TIMESTAMP" property="addTime" />
@@ -55,15 +55,15 @@
                   and ${criterion.condition}
                 </when>
                 <when test="criterion.singleValue">
-                  and ${criterion.condition} #{criterion.value,typeHandler=com.db.mybatis.JsonStringArrayTypeHandler}
+                  and ${criterion.condition} #{criterion.value,typeHandler=com.mall.ordercenter.batisalia.JsonStringArrayTypeHandler}
                 </when>
                 <when test="criterion.betweenValue">
-                  and ${criterion.condition} #{criterion.value,typeHandler=com.db.mybatis.JsonStringArrayTypeHandler} and #{criterion.secondValue,typeHandler=com.db.mybatis.JsonStringArrayTypeHandler}
+                  and ${criterion.condition} #{criterion.value,typeHandler=com.mall.ordercenter.batisalia.JsonStringArrayTypeHandler} and #{criterion.secondValue,typeHandler=com.mall.ordercenter.batisalia.JsonStringArrayTypeHandler}
                 </when>
                 <when test="criterion.listValue">
                   and ${criterion.condition}
                   <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
-                    #{listItem,typeHandler=com.db.mybatis.JsonStringArrayTypeHandler}
+                    #{listItem,typeHandler=com.mall.ordercenter.batisalia.JsonStringArrayTypeHandler}
                   </foreach>
                 </when>
               </choose>
@@ -107,15 +107,15 @@
                   and ${criterion.condition}
                 </when>
                 <when test="criterion.singleValue">
-                  and ${criterion.condition} #{criterion.value,typeHandler=com.db.mybatis.JsonStringArrayTypeHandler}
+                  and ${criterion.condition} #{criterion.value,typeHandler=com.mall.ordercenter.batisalia.JsonStringArrayTypeHandler}
                 </when>
                 <when test="criterion.betweenValue">
-                  and ${criterion.condition} #{criterion.value,typeHandler=com.db.mybatis.JsonStringArrayTypeHandler} and #{criterion.secondValue,typeHandler=com.db.mybatis.JsonStringArrayTypeHandler}
+                  and ${criterion.condition} #{criterion.value,typeHandler=com.mall.ordercenter.batisalia.JsonStringArrayTypeHandler} and #{criterion.secondValue,typeHandler=com.mall.ordercenter.batisalia.JsonStringArrayTypeHandler}
                 </when>
                 <when test="criterion.listValue">
                   and ${criterion.condition}
                   <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
-                    #{listItem,typeHandler=com.db.mybatis.JsonStringArrayTypeHandler}
+                    #{listItem,typeHandler=com.mall.ordercenter.batisalia.JsonStringArrayTypeHandler}
                   </foreach>
                 </when>
               </choose>
@@ -259,7 +259,7 @@
       update_time, deleted)
     values (#{orderSn,jdbcType=VARCHAR}, #{goodsId,jdbcType=INTEGER}, #{goodsName,jdbcType=VARCHAR}, 
       #{goodsSn,jdbcType=VARCHAR}, #{productId,jdbcType=INTEGER}, #{number,jdbcType=SMALLINT}, 
-      #{price,jdbcType=DECIMAL}, #{specifications,jdbcType=VARCHAR,typeHandler=com.db.mybatis.JsonStringArrayTypeHandler}, 
+      #{price,jdbcType=DECIMAL}, #{specifications,jdbcType=VARCHAR,typeHandler=com.mall.ordercenter.batisalia.JsonStringArrayTypeHandler}, 
       #{picUrl,jdbcType=VARCHAR}, #{comment,jdbcType=INTEGER}, #{addTime,jdbcType=TIMESTAMP}, 
       #{updateTime,jdbcType=TIMESTAMP}, #{deleted,jdbcType=BIT})
   </insert>
@@ -336,7 +336,7 @@
         #{price,jdbcType=DECIMAL},
       </if>
       <if test="specifications != null">
-        #{specifications,jdbcType=VARCHAR,typeHandler=com.db.mybatis.JsonStringArrayTypeHandler},
+        #{specifications,jdbcType=VARCHAR,typeHandler=com.mall.ordercenter.batisalia.JsonStringArrayTypeHandler},
       </if>
       <if test="picUrl != null">
         #{picUrl,jdbcType=VARCHAR},
@@ -397,7 +397,7 @@
         price = #{record.price,jdbcType=DECIMAL},
       </if>
       <if test="record.specifications != null">
-        specifications = #{record.specifications,jdbcType=VARCHAR,typeHandler=com.db.mybatis.JsonStringArrayTypeHandler},
+        specifications = #{record.specifications,jdbcType=VARCHAR,typeHandler=com.mall.ordercenter.batisalia.JsonStringArrayTypeHandler},
       </if>
       <if test="record.picUrl != null">
         pic_url = #{record.picUrl,jdbcType=VARCHAR},
@@ -433,7 +433,7 @@
       product_id = #{record.productId,jdbcType=INTEGER},
       `number` = #{record.number,jdbcType=SMALLINT},
       price = #{record.price,jdbcType=DECIMAL},
-      specifications = #{record.specifications,jdbcType=VARCHAR,typeHandler=com.db.mybatis.JsonStringArrayTypeHandler},
+      specifications = #{record.specifications,jdbcType=VARCHAR,typeHandler=com.mall.ordercenter.batisalia.JsonStringArrayTypeHandler},
       pic_url = #{record.picUrl,jdbcType=VARCHAR},
       `comment` = #{record.comment,jdbcType=INTEGER},
       add_time = #{record.addTime,jdbcType=TIMESTAMP},
@@ -472,7 +472,7 @@
         price = #{price,jdbcType=DECIMAL},
       </if>
       <if test="specifications != null">
-        specifications = #{specifications,jdbcType=VARCHAR,typeHandler=com.db.mybatis.JsonStringArrayTypeHandler},
+        specifications = #{specifications,jdbcType=VARCHAR,typeHandler=com.mall.ordercenter.batisalia.JsonStringArrayTypeHandler},
       </if>
       <if test="picUrl != null">
         pic_url = #{picUrl,jdbcType=VARCHAR},
@@ -505,7 +505,7 @@
       product_id = #{productId,jdbcType=INTEGER},
       `number` = #{number,jdbcType=SMALLINT},
       price = #{price,jdbcType=DECIMAL},
-      specifications = #{specifications,jdbcType=VARCHAR,typeHandler=com.db.mybatis.JsonStringArrayTypeHandler},
+      specifications = #{specifications,jdbcType=VARCHAR,typeHandler=com.mall.ordercenter.batisalia.JsonStringArrayTypeHandler},
       pic_url = #{picUrl,jdbcType=VARCHAR},
       `comment` = #{comment,jdbcType=INTEGER},
       add_time = #{addTime,jdbcType=TIMESTAMP},
