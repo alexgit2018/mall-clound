@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: authcenter-dev
+  cloud:
+    config:
+      discovery:
+        service-id: configserver
+      profile: dev
+      label: master
