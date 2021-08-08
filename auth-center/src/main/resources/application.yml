@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: mallauthcenter
+server:
+  port: 8400

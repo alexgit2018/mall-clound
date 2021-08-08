@@ -1,7 +1,5 @@
 server:
   port: 8000
-#  servlet:
-#    context-path: /eureka
 eureka:
   server:
     enable-self-preservation: false         #注册中心开启自我保护

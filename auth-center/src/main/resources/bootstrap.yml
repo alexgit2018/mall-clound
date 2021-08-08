@@ -1,9 +1,18 @@
 spring:
-  application:
-    name: authcenter-dev
   cloud:
     config:
       discovery:
         service-id: configserver
+        enabled: true
       profile: dev
-      label: master
+      label: main
+      fail-fast: true
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8000/eureka
+    fetch-registry: true
+    register-with-eureka: true
+  instance:
+    prefer-ip-address: true
+    instance-id: mallauthcenter
